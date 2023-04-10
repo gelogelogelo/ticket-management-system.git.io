@@ -1,0 +1,11 @@
+
+
+.banner-image{
+    height: 90%;
+    width: 100%;
+}
+@include breakpoint('md'){
+    .hero-banner{
+        padding-top: 0 !important;
+    }
+}

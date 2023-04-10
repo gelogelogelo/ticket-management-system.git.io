@@ -1,0 +1,38 @@
+
+.header{
+    background-color: #ffffff;
+    li{
+        list-style: none;
+     
+    }
+    a{
+     
+        text-decoration: none;
+    }
+
+}
+
+.navbar{
+    min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .nav-branding{
+    font-size: 2rem;
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    .nav-link{
+        transition: 0.7s ease;
+     
+    }
+  }
+
+    }
+ 
+
+
+
