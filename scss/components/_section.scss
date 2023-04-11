@@ -1,0 +1,57 @@
+.center-section{
+    margin-left:200px;
+    height: 90vh;
+    .dashboard{
+        h2{
+            font-size:25px;
+        }
+        hr{
+            position: relative;
+            bottom: -35px;
+            width: 30%;
+            left:10rem;
+        }
+    }
+}
+
+.section-notif{
+    height: 90vh;
+    width: 23%;
+    .notification-container{
+        h3{
+            font-size: 15px;
+            font-weight: 400;
+        }
+    .messages{
+        height: 100px;
+    
+        .icon{
+            font-size: 30px;
+        }
+       .message-text{
+        line-height: 1rem;
+        h5{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        p{
+            font-size:15px;
+        }
+       }
+    }
+    }
+}
+
+
+@include breakpoint('md'){
+    .center-section{
+        width: 95%;
+        margin: 0;
+        .task-container{
+            width: 100%;
+        }
+    }
+    .section-notif{
+        display: none;
+    }
+}

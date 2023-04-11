@@ -1,0 +1,21 @@
+.cards{
+    height: 150px;
+    background-image: linear-gradient(to left, #F1ECEC, #D3C9C9 );
+    h3{
+        font-size: 70px;
+    }
+    p{
+        font-size: 30px;
+        font-family: 'Alegreya Sans SC', sans-serif;
+    }
+    .icon{
+        font-size: 30px;
+    }
+}
+
+@include breakpoint('md'){
+    .cards{
+        width: 100%;
+    }
+}
+

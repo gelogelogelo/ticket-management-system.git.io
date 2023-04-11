@@ -1,0 +1,14 @@
+//widths
+$width-values: (
+    "none": 0,
+    "sm": 50%,
+    "md": 60%,
+    "lg": 80%,
+    "xl": 100%,
+);
+
+@each $size, $value in $width-values {
+    .width-#{$size} {
+        width: $value;
+    }
+}
