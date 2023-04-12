@@ -23,7 +23,172 @@
     <title>Tickets - Ticket Managetment System</title>
 </head>
 <body class="bg-light">
-  
+
+    <div class="side-bar">
+        <header class="side-header">
+            <!-- Close Button -->
+            <div class="close-btn">
+                <div class="fas fa-times"></div>
+            </div>
+                <img src="/images/logo.png" alt="logo" class="logo ml-3 mt-2">
+                <div class="menu mt-2">
+                    <div class="item"><a href="./dashboard.html"><i class="fa-solid fa-desktop"></i>Dashboard</a></div>
+                    <div class="item"><a href="./tickets.html"><i class="fas fa-ticket"></i>Tickets</a></div>
+                    <div class="item"><a href="products.html"><i class="fa-solid fa-bag-shopping"></i>Product</a></div>
+                    <div class="item"><a href="./users.html"><i class="fa-solid fa-user"></i>Users</a></div>
+                    <div class="item"><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></div>
+                </div>
+        </header>
+      </div>
+    
+      <header class="header">
+        <nav class="bg-white border border-bottom-2 ">
+            <div class="px-2 d-flex">
+                <div class="menu-btn mt-sm-1">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="d-flex width-xl gap-2 justify-content-end align-items-end mt-sm-2 icons">
+                    <li><i class="fa-regular fa-bell text-dark border border-dark p-1 rounded-circle"></i></li>
+                    <li><i class="fa-regular fa-user text-dark border border-dark p-1 rounded-circle"></i></li>
+                 </ul>
+        </div>
+        </nav>
+      </header>
+
+
+     <main>
+
+    <div class="filters d-flex align-items-end justify-content-end width-xl p-2 gap-4 ">
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn shadow-sm btn background-light">Filter</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">New</a>
+              <a href="#about">Previous</a>
+              <a href="#contact">Completed</a>
+            </div>
+          </div>
+        <div class="user-info">
+         <input type="text" class="username shadow-sm" placeholder="Search username">
+        </div>
+        <div class="search-container">
+            <input type="text" class="ticket shadow-sm" placeholder="Search ticket">
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+        <tr>
+        <th>Requested by:</th>
+        <th>Ticket ID</th>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Remarks</th>
+        <th>Date</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td> 
+            <i class="fa-regular fa-user text-light border border-dark p-1 rounded-circle bg-primary mr-1"></i>
+            Angelo Guiao</td>
+        <td>2001</td>
+        <td>Academe</td>
+        <td>About the lms...</td>
+        <td>
+            <div class="dropdown-status">
+                <button onclick="Dropdown()" class="dropbtn-status btn btn-primary text-white">Pending</button>
+                <div id="myDropdown-status" class="dropdown-content-status">
+                  <a href="#">Done</a>
+                  <a href="#">Overdue</a>
+                </div>
+              </div>
+        </td>
+        <td>Thank you...</td>
+        <td>03/01/2023</td>
+    </tr>
+    <tr>
+        <td> 
+            <i class="fa-regular fa-user text-light border border-dark p-1 rounded-circle bg-primary mr-1"></i>
+            Angelo Guiao</td>
+        <td>2001</td>
+        <td>Academe</td>
+        <td>About the lms...</td>
+        <td>
+            <div class="dropdown-status">
+                <button onclick="Dropdown()" class="dropbtn-status btn btn-primary text-white">Pending</button>
+                <div id="myDropdown-status" class="dropdown-content-status">
+                  <a href="#">Done</a>
+                  <a href="#">Overdue</a>
+                </div>
+              </div>
+        </td>
+        <td>Thank you...</td>
+        <td>03/01/2023</td>
+    </tr>
+    <tr>
+        <td> 
+            <i class="fa-regular fa-user text-light border border-dark p-1 rounded-circle bg-primary mr-1"></i>
+            Angelo Guiao</td>
+        <td>2001</td>
+        <td>Academe</td>
+        <td>About the lms...</td>
+        <td>
+            <div class="dropdown-status">
+                <button onclick="Dropdown()" class="dropbtn-status btn btn-primary text-white">Pending</button>
+                <div id="myDropdown-status" class="dropdown-content-status">
+                  <a href="#">Done</a>
+                  <a href="#">Overdue</a>
+                </div>
+              </div>
+        </td>
+        <td>Thank you...</td>
+        <td>03/01/2023</td>
+    </tr>
+    <tr>
+        <td> 
+            <i class="fa-regular fa-user text-light border border-dark p-1 rounded-circle bg-primary mr-1"></i>
+            Angelo Guiao</td>
+        <td>2001</td>
+        <td>Academe</td>
+        <td>About the lms...</td>
+        <td>
+            <div class="dropdown-status">
+                <button onclick="Dropdown()" class="dropbtn-status btn btn-primary text-white">Pending</button>
+                <div id="myDropdown-status" class="dropdown-content-status">
+                  <a href="#">Done</a>
+                  <a href="#">Overdue</a>
+                </div>
+              </div>
+        </td>
+        <td>Thank you...</td>
+        <td>03/01/2023</td>
+    </tr>
+    <tr>
+        <td> 
+            <i class="fa-regular fa-user text-light border border-dark p-1 rounded-circle bg-primary mr-1"></i>
+            Angelo Guiao</td>
+        <td>2001</td>
+        <td>Academe</td>
+        <td>About the lms...</td>
+        <td>
+            <div class="dropdown-status">
+                <button onclick="Dropdown()" class="dropbtn-status btn btn-primary text-white">Pending</button>
+                <div id="myDropdown-status" class="dropdown-content-status">
+                  <a href="#">Done</a>
+                  <a href="#">Overdue</a>
+                </div>
+              </div>
+        </td>
+        <td>Thank you...</td>
+        <td>03/01/2023</td>
+    </tr>
+    
+    
+</tbody>
+    </table>
+     </main>
 
     <!-- Bootstrap -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>

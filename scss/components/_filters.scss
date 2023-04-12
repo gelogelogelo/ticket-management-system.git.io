@@ -1,0 +1,18 @@
+.filters{
+    height: 18vh;
+}
+
+.add-container{
+    a{
+        cursor: pointer;
+        font-weight: 600;
+    }
+  i{
+   position: relative;
+   bottom: 1px;
+   left:-1px;
+   padding: 5px 7px;
+   background: var(--color-light-shade);
+   cursor: pointer;
+  }
+}
