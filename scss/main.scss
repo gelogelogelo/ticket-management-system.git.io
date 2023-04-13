@@ -1,12 +1,28 @@
+// Bootstrap Modules
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// utilities
 @import 'utilities/border-radius';
 @import 'utilities/font-weights';
 @import 'utilities/margins';
 @import 'utilities/paddings';
+@import 'utilities/width';
+@import 'utilities/colors';
+
+// responsive design/ media query
 @import 'responsive/breakpoint';
 @import 'layouts/flexbox';
 @import 'layouts/grids';
 @import 'layouts/header';
-@import 'variables';
-@import 'utilities/colors';
 @import 'layouts/hero';
+
+
+// Basic components needed
+@import 'components/avatars';
+@import 'components/table';
+@import 'components/sidebar';
+@import './components/section';
+@import 'variables';
+@import 'reset';
+@import 'components/cards';
+@import 'container';
