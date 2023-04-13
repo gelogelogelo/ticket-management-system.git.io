@@ -1,0 +1,58 @@
+.dropbtn,
+.dropbtn-status{
+    // background-color: var(--color-primary-contrast);
+    color: var(--color-medium-tint);
+    padding: 4px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    border:var(--color-primary-contrast);
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus,
+  .dropbtn-status:hover, .dropbtn:focus:hover {
+    background-color: #2980B9;
+    color:var(--color-primary-contrast);
+  }
+  
+  .dropdown,
+  .dropdown-status{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content,
+  .dropdown-content-status {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a,
+  .dropdown-content-status a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover,
+  .dropdown-status a:hover
+   {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+
+//   Input type username
+.username,
+.ticket{
+    border-radius: 10px;
+    border:var(--color-primary-contrast);
+    padding: 4px 30px;
+    font-size: 16px;
+}
