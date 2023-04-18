@@ -12,3 +12,19 @@ $width-values: (
         width: $value;
     }
 }
+
+$height-values: (
+    "none": 0,
+    "sm": 50px,
+    "md": 100px,
+    "lg": 150px,
+    "xl": 200px,
+    "xxl":250px,
+);
+
+
+@each $size, $value in $height-values {
+    .height-#{$size} {
+        height: $value;
+    }
+}

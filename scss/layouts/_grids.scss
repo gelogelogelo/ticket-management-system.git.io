@@ -44,3 +44,36 @@ $gap-values: (
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+// category
+
+.category-list{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform .3s;
+  }
+  .grid-item:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.05); 
+  cursor:pointer;
+  }
+  
+@include breakpoint("md"){
+    .category-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+@include breakpoint("sm"){
+    .category-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

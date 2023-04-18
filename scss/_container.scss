@@ -8,3 +8,32 @@
 .container {
     @extend %containerGutterBreakpoints;
 }
+
+
+.category-container{
+    height:80vh;
+}
+.ticket-container{
+    height: 80%;
+
+}
+
+.ticlet-right-container{
+    box-shadow: -6px -1px 5px 0px rgba(235,221,221,0.75);
+    -webkit-box-shadow: -6px -1px 5px 0px rgba(235,221,221,0.75);
+    -moz-box-shadow: -6px -1px 5px 0px rgba(235,221,221,0.75);
+    overflow: hidden;
+    h2{
+        font-family: 'Righteous', cursive;
+    }
+}
+
+@include breakpoint('sm'){
+    .category-container{
+        height: 190vh;
+    }
+    .category-text{
+        font-size: 20px;
+    }
+}
+

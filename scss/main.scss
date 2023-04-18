@@ -8,6 +8,7 @@
 @import 'utilities/paddings';
 @import 'utilities/width';
 @import 'utilities/colors';
+@import 'utilities/displays';
 
 // responsive design/ media query
 @import 'responsive/breakpoint';
@@ -15,6 +16,8 @@
 @import 'layouts/grids';
 @import 'layouts/header';
 @import 'layouts/hero';
+@import 'layouts/grids';
+@import 'layouts/footer';
 
 
 // Basic components needed
@@ -28,3 +31,7 @@
 @import 'container';
 @import 'components/filters';
 @import 'components/dropdown';
+
+// form
+
+@import 'form/form';

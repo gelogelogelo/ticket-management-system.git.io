@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/ticket-icon.png">
+
+    
+    <!-- Website icon -->
+    <link rel="icon" type="image/x-icon" href="./images/ticket-icon.png">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Ticket Managetment System</title>
+</head>
+<body>
+  
+    <header class="header background-dark">
+        <div class="container">
+            <nav class="navbar ">
+                <img class="nav-branding" src="./images/go-cloud.png">
+
+                <div class="nav-menu">
+                    <h3 class="text-color-light">Help Desk</h3>
+                    </div>
+            </nav>
+        </div>
+        <div class="links d-flex background-light shadow-sm pb-1">
+          <div class="container">
+          <a href="index.html">Help desk</a>
+          <i class="fa-solid fa-greater-than icons"></i>
+          <a href="category.html">Category</a>
+          <i class="fa-solid fa-greater-than icons"></i>
+          <a href="#">Create Ticket</a>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+        <section class="ticket-container row mt-7 mb-2 mx-2 shadow">
+          <div class="ticket-left-container col-sm-9">
+            <form class="p-2">
+                <div class="form-group d-flex gap-3">
+                    <div class="input-area">
+                  <label for="exampleFormControlInput1">Name:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+                    </div>
+                    <div class="input-area">
+                  <label for="exampleFormControlInput1">Email:</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="form-group d-flex gap-3 mt-1">
+                 <div class="input-area">
+                    <label for="custom-select">Account type</label>
+                        <select class="custom-select form-control" id="custom-select" required>
+                          <option value="teacher">Teacher</option>
+                          <option value="admin">Admin</option>
+                          <option value="principal">Principal</option>
+                          <option value="student">Student</option>
+                          <option value="other">Others</option>
+                        </select>
+                 </div>
+                 <div class="input-area">
+                    <label for="exampleFormControlInput1">Subject:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter subject">
+                 </div>
+                </div>
+            
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Attachments:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="custom-file">
+                        <label for="file-input" class="custom-file-upload">
+                            <i class="fa fa-cloud-upload"></i> Choose File
+                        </label>
+                        <input id="file-input" type="file" />
+                      </div>
+                  </div>
+
+                 <div class="button-actions d-flex justify-content-center mt-2">
+             
+                    <a class="btn btn-primary width-sm" href="./ticket-details.html">Submit Ticket</a>
+         
+                 </div>
+              </form>
+          </div>
+          <div class="ticlet-right-container col-sm-3">
+          <img src="./images/Mobile-login.png" alt="login-hero" class="login-avatar mt-3">
+          </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <p class="text-align-center">© Copyright GoCloud Asia 2023 | Support Ticket System</p>
+    </footer>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

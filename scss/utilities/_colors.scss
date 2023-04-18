@@ -7,6 +7,7 @@ $theme-colors: (
     "medium": var(--color-medium),
     "light": var(--color-light),
     "card": var(--color-card),
+    "cloud": var(--color-cloud)
 );
 
 @each $name, $color in $theme-colors {
