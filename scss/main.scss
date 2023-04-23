@@ -9,7 +9,7 @@
 @import 'utilities/width';
 @import 'utilities/colors';
 @import 'utilities/displays';
-
+@import 'fonts';
 // responsive design/ media query
 @import 'responsive/breakpoint';
 @import 'layouts/flexbox';
@@ -18,6 +18,7 @@
 @import 'layouts/hero';
 @import 'layouts/grids';
 @import 'layouts/footer';
+@import 'dashboard';
 
 
 // Basic components needed

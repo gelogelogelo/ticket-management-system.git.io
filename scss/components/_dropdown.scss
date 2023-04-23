@@ -55,4 +55,14 @@
     border:var(--color-primary-contrast);
     padding: 4px 30px;
     font-size: 16px;
+    width: 100%;
 }
+
+.status{
+  width: 125px;
+}
+
+.status option{
+  margin-left: 5px !important;
+}
+

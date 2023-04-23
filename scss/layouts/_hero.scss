@@ -15,6 +15,14 @@
         margin:0 !important;
     }
     .hero-section{
-        height: 140vh;
+        height: 85vh;
+    }
+}
+@include breakpoint('sm'){
+    .hero-section{
+        height: 105vh;
+    }
+    .footer p{
+        font-size: 10px;
     }
 }

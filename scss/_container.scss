@@ -9,6 +9,51 @@
     @extend %containerGutterBreakpoints;
 }
 
+.login-container{
+    height: 70vh;
+}
+
+.login-right{
+    overflow: hidden;
+    z-index:100;
+    height: 80vh;
+}
+.login-left{
+    z-index:1;
+}
+.login-right::after{
+    content: "";
+    position:relative;
+    background:#011011;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(140deg);
+  height: 100px;
+  width: 300px;
+    left:-20rem;
+    z-index: -100;
+    overflow: hidden;
+    bottom: -90px;
+    border-radius: 50px 10px 20px 50px;
+
+
+}
+.login-right::before{
+    content: "";
+    position:relative;
+    background:#011011;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(140deg);
+  height: 100px;
+  width: 300px;
+    right:-20rem;
+    z-index: -100;
+    overflow: hidden;
+    top: -90px;
+    border-radius: 50px 50px 50px 30px;
+
+
+}
+
 
 .category-container{
     height:80vh;
@@ -28,12 +73,29 @@
     }
 }
 
-@include breakpoint('sm'){
+
+
+@include breakpoint('md'){
     .category-container{
-        height: 190vh;
+        height: 80vh;
     }
     .category-text{
         font-size: 20px;
     }
 }
 
+@include breakpoint('sm'){
+    .category-container{
+        height: 125 vh;
+    }
+
+
+
+    .ticket-container{
+        height: 80%;
+    width: 100%;
+    margin-left: 7px !important;
+
+    }
+
+}

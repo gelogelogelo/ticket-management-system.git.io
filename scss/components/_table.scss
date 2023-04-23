@@ -1,8 +1,28 @@
-.table{
-    margin-left:15rem;
-    width: 81%;
-}
+// .table{
+//     margin-left:15rem;
+//     width: 81%;
+// }
 
-.details{
-    padding-top: 12px !important;
-}
+// .details{
+//     padding-top: 12px !important;
+// }
+
+
+.table{
+    border-collapse: collapse;
+   }
+  
+  .table thead tr{
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+   }
+  
+  .table thead td{
+    font-weight: 700;
+   }
+  
+   .table td{
+    padding: .5rem;
+    font-size: .9rem;
+    color: #222;
+   }

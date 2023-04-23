@@ -1,8 +1,25 @@
 *{
-    margin:0;
     padding:0;
-    box-sizing:border-box; 
-}
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+//   .main-content {
+//     margin-left: 200px;
+//   }
+  
+//   #main-dashboard{
+//     padding: 5rem 1.5rem;
+//     background: #f1f5f9;
+//     min-height: calc(100vh - 90px);
+//     transition: margin-left 300ms;
+//     width: 100%;
+//   }
+
 a{
     text-decoration: none;
 }

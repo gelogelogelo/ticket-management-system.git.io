@@ -9,15 +9,56 @@
     top:0;
 
 }
-
-// .circle-icon{
-//     padding: 25px 35px;
-//     background-image: linear-gradient(to bottom, #147bde, #0096eb, #00b0f4, #3bc8f9, #6cdffd);
-    
-//     position: relative;
-//     top: 50px;
-//     left:10px;
+// #cloud-icon{
+//     width: 150px;
+//     height: 100px;
+//     margin-left: 10px;
+//     margin-top:15px;
 // }
+
+.arrow-icon{
+    position: relative;
+    top:-188px;
+    cursor: pointer;
+}
+#login-icon{
+    width: 90%;
+    height: 100%;
+   
+}
+
+.login-icon{
+    height: 50px;
+    width: 50px;
+
+}
+
+   
+
+.circle-icons{
+    z-index: 1;
+    position: relative;
+}
+// .circle-icon:nth-child(1){
+//     height: 150px;
+//     width: 500px;
+//     background-image: linear-gradient(to bottom, #147bde, #0096eb, #00b0f4, #3bc8f9, #6cdffd);
+//     position: relative;
+//     top: -20px;
+//     right: -30rem;
+//     border-radius: 50%;
+//     z-index:200;
+// }
+
+// .circle-icon:nth-child(2){
+//     background-image: linear-gradient(to bottom, #147bde, #0096eb, #00b0f4, #3bc8f9, #6cdffd);
+//     position: relative;
+//     top: -50px;
+//     right: -13rem;
+//     border-radius: 50%;
+// }
+
+
 // .circle-icon:nth-child(2){
 //     top: 130px;
 //     left:50px;
