@@ -10,11 +10,16 @@
 
 .table{
     border-collapse: collapse;
+background: var(--color-primary-contrast);
    }
   
   .table thead tr{
     border-top: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0; 
+   }
+
+   .table thead{
+    border-bottom: 1px solid black !important;
    }
   
   .table thead td{
@@ -22,7 +27,8 @@
    }
   
    .table td{
-    padding: .5rem;
+    padding: 15px;
     font-size: .9rem;
     color: #222;
    }
+

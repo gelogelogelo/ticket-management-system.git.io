@@ -49,9 +49,48 @@
         <section class="ticket-container row mt-7 mb-2 mx-2 shadow">
           <div class="ticket-left-container col-sm-9">
             <form class="p-2">
+              <div class="form-group mb-1">
+                <label>Company/School</label>
+                <select class="form-select btn-outline width-full" aria-label="Default select example">
+                  <option selected>College of Our Lady of Mt. Carmel</option>
+                  <option value="Ongoing">Tanuan Institute</option>
+                  <option value="Done">Febias College of Bible</option>
+                  <option value="Ongoing">Tomas del Rosario</option>
+                  <option value="Done">Montessori Academy Valenzuela</option>
+                  <option value="Ongoing">Jocson College Inc College</option>
+                  <option value="Done">St. Luke's Medical Center</option>
+                  <option value="Ongoing">Pampanga College</option>
+                  <option value="Done">Notre Dame of Kidapawan</option>
+                  <option value="">Saint Tonis College, Inc.</option>
+                  <option value="">Saint Francis College</option>
+                  <option value="">Escuela de Sophia of Caloocan, Inc.</option>
+                  <option value="">Saint Joseph’s College of Baggao, Inc.</option>
+                </select>
+              </div>
+              <div class="form-group d-flex gap-3 mb-1">
+               <div class="width-sm">
+                <label>Department/ User Account Type</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Registrar</option>
+                    <option value="Ongoing">Teacher</option>
+                    <option value="Done">Principal</option>
+                    <option value="Done">Others</option>
+                  </select>
+               </div>
+               <div class="width-sm">
+                <label>System Type</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>College</option>
+                    <option value="Ongoing">K-12</option>
+                    <option value="Done">SHS</option>
+                    <option value="Done">Pre-school</option>
+                    <option value="Done">Maed</option>
+                  </select>
+               </div>
+            </div>
                 <div class="form-group d-flex gap-3">
                     <div class="input-area">
-                  <label for="exampleFormControlInput1">Name:</label>
+                  <label for="exampleFormControlInput1">Name of the Reporter:</label>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
                     </div>
                     <div class="input-area">
@@ -61,17 +100,18 @@
                 </div>
                 <div class="form-group d-flex gap-3 mt-1">
                  <div class="input-area">
-                    <label for="custom-select">Account type</label>
-                        <select class="custom-select form-control" id="custom-select" required>
-                          <option value="teacher">Teacher</option>
-                          <option value="admin">Admin</option>
-                          <option value="principal">Principal</option>
-                          <option value="student">Student</option>
-                          <option value="other">Others</option>
-                        </select>
+                  <label for="exampleFormControlInput1">Username:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your username">
                  </div>
                  <div class="input-area">
-                    <label for="exampleFormControlInput1">Subject:</label>
+                    <label for="exampleFormControlInput1">Contact Number:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter contact number">
+                 </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="input-area">
+                    <label for="exampleFormControlInput1">Subjec:</label>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter subject">
                  </div>
                 </div>
@@ -93,13 +133,15 @@
 
                  <div class="button-actions d-flex justify-content-center mt-2">
              
-                    <a class="btn btn-primary width-sm" href="./ticket-details.html">Submit Ticket</a>
+                    <a class="btn btn-primary" href="./ticket-details.html">Submit Ticket</a>
          
                  </div>
               </form>
           </div>
-          <div class="ticlet-right-container col-sm-3">
-          <img src="./images/Mobile-login.png" alt="login-hero" class="login-avatar mt-3">
+          <div class="ticlet-right-container col-sm-3 d-flex flex-column align-items-center justify-content-center background-main text-white">
+            <h4>Welcome!</h4>
+            <p class="mb-3 text-align-center"> Please fill out the form and we will get back to you as soon as possible.</p>
+      
           </div>
         </section>
         </div>

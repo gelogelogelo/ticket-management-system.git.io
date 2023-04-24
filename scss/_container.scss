@@ -12,19 +12,27 @@
 .login-container{
     height: 70vh;
 }
-
+#login-image{
+    width: 60%;
+    height: 60%;
+    
+}
+.login-left h5{
+    font-size: 25px;
+}
+.login-left p{
+    font-size: 12px;
+}
 .login-right{
     overflow: hidden;
     z-index:100;
     height: 80vh;
 }
-.login-left{
-    z-index:1;
-}
+
 .login-right::after{
     content: "";
     position:relative;
-    background:#011011;
+    background-image: linear-gradient(to right top, #0f1427, #1b2b4f, #23447c, #245fab, #157cde);
     -ms-transform: rotate(20deg); /* IE 9 */
     transform: rotate(140deg);
   height: 100px;
@@ -40,7 +48,7 @@
 .login-right::before{
     content: "";
     position:relative;
-    background:#011011;
+    background-image: linear-gradient(to right top, #0f1427, #1b2b4f, #23447c, #245fab, #157cde);
     -ms-transform: rotate(20deg); /* IE 9 */
     transform: rotate(140deg);
   height: 100px;
@@ -71,6 +79,23 @@
     h2{
         font-family: 'Righteous', cursive;
     }
+}
+
+
+.settings-left{
+    border-right: 1px solid gray;
+}
+
+.add-users{
+    background: blue;
+    color: rgb(255, 255, 255);
+    padding: 2px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.add-users:hover{
+    color:#fff;
 }
 
 

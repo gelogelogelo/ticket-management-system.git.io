@@ -24,3 +24,12 @@
 #file-input {
   display: none;
 }
+
+
+.account-settings input[type=text],
+.account-settings input[type=email],
+.account-settings input[type=password],
+.account-settings select
+{
+  width: 24.5rem;
+}
