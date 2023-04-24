@@ -23,128 +23,225 @@
     <title>Dashboard - Ticket Managetment System</title>
 </head>
 <body class="bg-light">
-  <div class="side-bar">
-    <header class="side-header">
-        <!-- Close Button -->
-        <div class="close-btn">
-            <div class="fas fa-times"></div>
-        </div>
-            <img src="/images/logo.png" alt="logo" class="logo ml-3 mt-2">
-            <div class="menu mt-2">
-                <div class="item"><a href="dashboard.html"><i class="fa-solid fa-desktop"></i>Dashboard</a></div>
-                <div class="item"><a href="tickets.html"><i class="fas fa-ticket"></i>Tickets</a></div>
-                <div class="item"><a href="products.html"><i class="fa-solid fa-bag-shopping"></i>Product</a></div>
-                <div class="item"><a href="users.html"><i class="fa-solid fa-user"></i>Users</a></div>
-                <div class="item"><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></div>
-            </div>
-    </header>
+  <input type="checkbox" id="nav-toggle">
+  <div class="sidebar">
+      <div class="sidebar-brand">
+          <img src="./images/cloud.png">
+          <h4>gocloud</h4>
+      </div>
+
+      <div class="sidebar-menu">
+          <ul>
+              <li><a href="dashboard.html" class="active">
+                  <i class="fa-solid fa-igloo"></i>
+                  <span>Dashboard</span>
+              </a>
+              </li>
+              <li><a href="tickets.html">
+                  <i class="fa-solid fa-ticket"></i>
+                  <span>Tickets</span>
+              </a>
+              </li>
+              <li><a href="dashboard-category.html">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span>Category</span>
+              </a>
+              </li>
+              <li><a href="dashboard-category.html">
+                <i class="fa-solid fa-users"> </i>
+                <span>Clients</span>
+            </a>
+            </li>
+
+              
+              <li><a href="users.html">
+                  <i class="fa-solid fa-user"></i>
+                  <span>Accounts</span>
+              </a>
+              </li>
+              <li><a href="settings.html">
+                  <i class="fa-solid fa-gear"></i>
+                  <span>Settings</span>
+              </a>
+              </li>
+          </ul>
+      </div>
   </div>
 
-  <header class="header">
-    <nav class="bg-white border border-bottom-2 ">
-        <div class="px-2 d-flex">
-            <div class="menu-btn mt-sm-1">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="d-flex width-xl gap-2 justify-content-end align-items-end mt-sm-2 icons">
-                <li><i class="fa-regular fa-bell text-dark border border-dark p-1 rounded-circle"></i></li>
-                <li><i class="fa-regular fa-user text-dark border border-dark p-1 rounded-circle"></i></li>
-             </ul>
-    </div>
-    </nav>
-  </header>
+  <div class="main-content">
+      <header class="dashboard-header">
+          <h1>
+              <label for="nav-toggle" id="font-icon">
+                  <i class="fa-solid fa-bars" id="toggle"></i>
+              </label>
+                  Dashboard
+              </h1>
+              <!-- <div class="search-wrapper">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="search" placeholder="Search here">
+              </div> -->
+             <div class="user-wrapper">
+              <img src="./images/avatar-icon.png" alt="avatar">
+              <div>
+                  <h4>John Doe</h4>
+                  <small>Super admin</small>
+              </div>
+             </div> 
+      </header>
 
-  <main class="d-flex gap-2">
-    <section class="center-section width-md">
-       <div class="container">
-         <div class="dashboard">
-            <h2 class="text-color-medium "><hr>Dashboard</h2>
-            <div class="task-container ml-1">
-               <div class="row gap-4 mb-1">
-                <div class="cards col-sm rounded-md d-flex gap-4 align-items-center">
-                    <h3>24</h3>
-                    <p class="mt-1">New Ticket</p>
-                    <i class="fa-solid fa-arrow-right icon ml-2"></i>
-                </div>
-                <div class="cards col-sm rounded-md d-flex gap-4 align-items-center">
-                    <h3>08</h3>
-                    <p class="mt-1">On Going </p>
-                    <i class="fa-solid fa-arrow-right icon ml-2"></i>
-                </div>
-               </div>
-               <div class="row gap-4 mb-1">
-                <div class="cards col-sm rounded-md d-flex gap-4 align-items-center">
-                    <h3>02</h3>
-                    <p class="mt-1">Completed</p>
-                    <i class="fa-solid fa-arrow-right icon ml-2"></i>
-                </div>
-                <div class="cards col-sm rounded-md d-flex gap-4 align-items-center">
-                    <h3>06</h3>
-                    <p class="mt-1">Overdue</p>
-                    <i class="fa-solid fa-arrow-right icon ml-3"></i>
-                </div>
-               </div>
-               <div class="row gap-4 mb-1">
-                <div class="cards col-sm rounded-md d-flex gap-4 align-items-center">
-                    <h3>01</h3>
-                    <p class="mt-1 ml-1">Due Today</p>
-                    <i class="fa-solid fa-arrow-right icon ml-2"></i>
-                </div>
-                <div class="cards col-sm rounded-md d-flex gap-4 align-items-center">
-                    <h3>41</h3>
-                    <p class="mt-1">All tickets</p>
-                    <i class="fa-solid fa-arrow-right icon ml-2"></i>
-                </div>
-               </div>
-            </div>
-         </div>
-       </div>
-    </section>
+      <main id="main-dashboard">
+          <div class="item-card">
+                 <div class="card-single">
+                  <div>
+                  <h4>20</h4>
+                  <span>New task</span>
+              </div>
+                  <div>
+                      <i class="fa-solid fa-clipboard icon"></i>
+                  </div>
+                 </div>
+                 <div class="card-single">
+                  <div>
+                  <h4>05</h4>
+                  <span>On Going</span>
+                  </div>
+                  <div>
+                      <i class="fa-solid fa-ellipsis icon"></i>
+                  </div>
+                 </div>
+                 <div class="card-single">
+                  <div>
+                  <h4>02</h4>
+                  <span>Overdue</span>
+              </div>
+                  <div>
+                      <i class="fa-solid fa-exclamation-circle icon"></i>
+                  </div>
+                 </div>
+                 <div class="card-single">
+                  <div>
+                  <h4>30</h4>
+                  <span>ACCOMPLISHED</span>
+              </div>
+                  <div>
+                      <i class="fa-solid fa-check-circle icon"></i>
+                  </div>
+                 </div>
+          </div>
 
-    <section class="section-notif bg-white mt-2 rounded-md shadow-sm p-1">
-        <div class="container">
-            <div class="notification-container">
-                <h3>Notification</h3>
-                <div class="messages d-flex rounded-md border border-dark  px-2 gap-2 mb-1">
-                    <i class="fas fa-ticket icon mt-2"></i>
-                  <div class="message-text pt-1">
-                    <h5>New ticket has been added</h5>
-                    <p>Title: Academe LMS</p>
-                    <p>Sender: Jayson Cabigting</p>
-                  </div>
-                </div>
-                <div class="messages d-flex rounded-md border border-dark  px-2 gap-2 mb-1">
-                    <i class="fas fa-ticket icon mt-2"></i>
-                  <div class="message-text pt-1">
-                    <h5>New ticket has been added</h5>
-                    <p>Title: Academe LMS</p>
-                    <p>Sender: Jayson Cabigting</p>
-                  </div>
-                </div>
-                <div class="messages d-flex rounded-md border border-dark  px-2 gap-2 mb-1">
-                    <i class="fas fa-ticket icon mt-2"></i>
-                  <div class="message-text pt-1">
-                    <h5>New ticket has been added</h5>
-                    <p>Title: Academe LMS</p>
-                    <p>Sender: Jayson Cabigting</p>
-                  </div>
-                </div>
-                <div class="messages d-flex rounded-md border border-dark  px-2 gap-2 mb-1">
-                    <i class="fas fa-ticket icon mt-2"></i>
-                  <div class="message-text pt-1">
-                    <h5>New ticket has been added</h5>
-                    <p>Title: Academe LMS</p>
-                    <p>Sender: Jayson Cabigting</p>
-                  </div>
-                </div>
-                
-                
-            </div>
-        </div>
-        
-    </section>
-  </main>
+          <div class="recent-grid">
+              <div class="projects">
+                <div class="card">
+                    <div class="card-header">
+                      <h2>Recent Task</h2>
+                      <a href="tickets.html"></a>
+                      <button>See all <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                    </div>
 
+                    <div class="card-body">
+                      <table width="100%" id="user-request">
+                          <thead>
+                              <tr>
+                                  <td>Requested by:</td>
+                                  <td>Ticket ID</td>
+                                  <td>Status</td>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Angelo Lazatin</td>
+                                  <td>200144</td>
+                                  <td>DONE</td>
+                              </tr>
+
+                              <tr>
+                                <td>Angelo Lazatin</td>
+                                <td>200144</td>
+                                <td>DONE</td>
+                            </tr>
+                            <tr>
+                              <td>Angelo Lazatin</td>
+                              <td>200144</td>
+                              <td>DONE</td>
+                          </tr>
+                          <tr>
+                            <td>Angelo Lazatin</td>
+                            <td>200144</td>
+                            <td>DONE</td>
+                        </tr>
+                        <tr>
+                          <td>Angelo Lazatin</td>
+                          <td>200144</td>
+                          <td>DONE</td>
+                      </tr> <tr>
+                        <td>Angelo Lazatin</td>
+                        <td>200144</td>
+                        <td>DONE</td>
+                    </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>
+              <div class="customers">
+                 <div class="card">
+                  <div class="card-header">
+                      <h3>New customer</h3>
+
+                      <button>See all <span class="fa fa-arrow-right"></span></button>
+                  </div>
+                  <div class="card-body">
+                      <div class="customer d-flex">
+                          <div>
+                              <img src="./images/avatar-icon.png" alt="profile" class="avatar">
+                              <div>
+                                  <h4>Angelo Guiao</h4>
+                                  <small>CEO Go cloud </small>
+                              </div>
+                          </div>
+
+                          <div>
+                              <i class="fa fa-user-circle"></i>
+                              <i class="fa fa-comment"></i>
+                              <i class="fa fa-user"></i>
+                          </div>
+                      </div>
+                      <div class="customer">
+                          <div>
+                              <img src="./images/avatar-icon.png" alt="profile" class="avatar">
+                              <div>
+                                  <h4>Angelo Guiao</h4>
+                                  <small>CEO Go cloud </small>
+                              </div>
+                          </div>
+
+                          <div>
+                              <i class="fa fa-user-circle"></i>
+                              <i class="fa fa-comment"></i>
+                              <i class="fa fa-user"></i>
+                          </div>
+                      </div>
+                      <div class="customer">
+                          <div>
+                              <img src="./images/avatar-icon.png" alt="profile" class="avatar">
+                              <div>
+                                  <h4>Angelo Guiao</h4>
+                                  <small>CEO Go cloud </small>
+                              </div>
+                          </div>
+
+                          <div>
+                              <i class="fa fa-user-circle"></i>
+                              <i class="fa fa-comment"></i>
+                              <i class="fa fa-user"></i>
+                          </div>
+                      </div>
+                  </div>
+                 </div>
+              </div>
+          </div>
+      </main>
+      </div>
     <!-- Bootstrap -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
