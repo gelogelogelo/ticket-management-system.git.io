@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/ticket-icon.png">
+
+    
+    <!-- Website icon -->
+    <link rel="icon" type="image/x-icon" href="./images/ticket-icon.png">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Ticket Managetment System</title>
+</head>
+<body>
+  
+    <header class="header background-dark">
+        <div class="container">
+            <nav class="navbar ">
+                <img class="nav-branding" src="./images/go-cloud.png">
+                 
+                <div class="nav-menu">
+                    <h3 class="text-color-light">Help Desk</h3>
+                    </div>
+            </nav>
+        </div>
+        <div class="links d-flex background-light shadow-sm pb-1">
+          <div class="container">
+          <a href="index.html">Help desk</a>
+          <i class="fa-solid fa-greater-than icons"></i>
+          <a href="category.html">Category</a>
+          <i class="fa-solid fa-greater-than icons"></i>
+          <a href="create-tickets.html">Create Ticket</a>
+          <i class="fa-solid fa-greater-than icons"></i>
+          <a href="#">Ticket Details</a>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+        <section class="ticket-container row mt-7 mb-2 mx-2 gap-3" >
+         <div class="ticket-left-container col-sm-8 shadow p-2">
+            <div class="user-info  shadow-sm p-2">
+                  <table>
+                    <tbody>
+                        <tr>
+                            <td>Sender:</td>
+                            <td class="pl-2">Angelo Guiao</td>
+                        </tr>
+                        <tr>
+                            <td>Subject:</td>
+                            <td class="pl-2">Academe</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="pl-2">5hrs ago</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+            <div class="description mt-1">
+                <span>Description</span>
+                <div class="rounded-2 shadow-sm width-xl p-2 opacity-50 height-md border border-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, eum?</div>
+            </div>
+            <div class="reply mt-1">
+                <span>Reply</span>
+                <div class="rounded-2 shadow-sm width-xl p-2 opacity-50 height-md border border-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, eum?</div>
+            </div>
+            
+            <div class="attachments">
+                <div class="form-group mt-1">
+                    <label for="exampleFormControlTextarea1">Messages</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="custom-file">
+                        <label for="file-input" class="custom-file-upload">
+                            <i class="fa fa-cloud-upload"></i> Choose File
+                        </label>
+                        <input id="file-input" type="file" />
+                      </div>
+                  </div>
+            </div>
+            <div class="submit-button d-flex justify-content-center ">
+                <a href="/dashboard.html" class="btn btn-outline-primary mt-1">Send Reply</a>
+            </div>
+         </div>
+
+         
+
+         <div class="ticket-right-container col-sm-3 height-xxl p-2">
+           <p>Ticket Details:</p>
+           <table id="ticket-table">
+            <tbody>
+                <tr>
+                    <td>Ticket ID:</td>
+                    <td class="pl-2">20014</td>
+                </tr>
+                <tr>
+                    <td>Product:</td>
+                    <td class="pl-2">Academe</td>
+                </tr>
+                <tr>
+                    <td>Created on:</td>
+                    <td class="pl-2">2023-04-13 02:29:05</td>
+                </tr>
+                <tr>
+                    <td>Updated on:</td>
+                    <td class="pl-2">2023-05-13 03:10:01</td>
+                </tr>
+                <tr>
+                    <td>Priority</td>
+                    <td class="pl-2">Low</td>
+                </tr>
+            </tbody>
+           </table>
+         </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <p class="text-align-center">© Copyright GoCloud Asia 2023 | Support Ticket System</p>
+    </footer>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
