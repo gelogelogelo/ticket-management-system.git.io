@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <!-- Website icon -->
+    <link rel="icon" type="image/x-icon" href="./images/ticket-icon.png">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+
+    <!-- quill -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <title>Dashboard - Ticket Managetment System</title>
+</head>
+<body class="bg-light">
+  <input type="checkbox" id="nav-toggle">
+  <div class="sidebar">
+      <div class="sidebar-brand">
+          <img src="./images/cloud.png">
+          <h4>gocloud</h4>
+      </div>
+
+      <div class="sidebar-menu">
+          <ul>
+              <li><a href="dashboard.html">
+                  <i class="fa-solid fa-igloo"></i>
+                  <span>Dashboard</span>
+              </a>
+              </li>
+              <li><a href="tickets.html"  class="active">
+                  <i class="fa-solid fa-ticket"></i>
+                  <span>Tickets</span>
+              </a>
+              </li>
+              <li><a href="dashboard-category.html">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span>Category</span>
+              </a>
+              </li>
+              <li><a href="clients.html">
+                <i class="fa-solid fa-users"></i>
+                <span>Clients</span>
+            </a>
+            </li>
+              <li><a href="users.html">
+                  <i class="fa-solid fa-user"></i>
+                  <span>Accounts</span>
+              </a>
+              </li>
+              <li><a href="settings.html">
+                  <i class="fa-solid fa-gear"></i>
+                  <span>Settings</span>
+              </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="main-content">
+      <header class="dashboard-header">
+          <h1>
+              <label for="nav-toggle" id="font-icon">
+                  <i class="fa-solid fa-bars" id="toggle"></i>
+              </label>
+                 Ticket Details
+              </h1>
+              <!-- <div class="search-wrapper">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="search" placeholder="Search here">
+              </div> -->
+             <div class="user-wrapper">
+              <img src="./images/avatar-icon.png" alt="avatar">
+              <div>
+                  <h4>John Doe</h4>
+                  <small>Super admin</small>
+              </div>
+             </div> 
+      </header>
+
+      <main id="main-dashboard">
+      <div class="row d-flex flex-column mt-2">
+        <div class="col">
+           <span class="background-main text-white p-1 ticket-number">Ticket 10022</span>
+        </div>
+        <div class="col ticket-box">
+            <div class="row">
+                <div class="col-md-3 ticket-box-left pt-2">
+                    <div>
+                        <h6>Requested by</h6>
+                    </div>
+                    <div class="py-1 px-2 border rounded-4 d-flex border-dark border-opacity-50 ">
+                        <img src="./images/avatar-icon.png" class="user-icon">
+                        <small class="pt-sm-1 ml-1">Angelo M. Guiao</small>
+                    </div>
+                    <div class="mt-1">
+                        <h6>Account type</h6>
+                    </div>
+                    <div>
+                        <input class="form-control py-1 px-2 border rounded-4 d-flex border-dark border-opacity-50" type="text" placeholder="Teacher" readonly>
+                    </div>
+                    <div class="mt-1">
+                        <h6>Email</h6>
+                    </div>
+                    <div>
+                        <input class="form-control py-1 px-2 border rounded-4 d-flex border-dark border-opacity-50" type="text" placeholder="angeloguiao@gmail.com" readonly>
+                    </div>
+                    <div class="mt-1">
+                        <h6>Contact Number</h6>
+                    </div>
+                    <div>
+                        <input class="form-control py-1 px-2 border rounded-4 d-flex border-dark border-opacity-50" type="text" placeholder="09552962722" readonly>
+                    </div>
+                    <div class="mt-1">
+                        <h6>Assigned by</h6>
+                    </div>
+                    <div class="py-1 px-2 border rounded-4 d-flex border-dark border-opacity-50 align-items-center">
+                        <img src="./images/avatar-icon2.png" class="user-icon">
+                        <small class="ml-1">Jayson Balingit</small>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                     <div class="mt-1 row ">
+                        <div class="p-1 border shadow-sm col ml-1 rounded-3 bg-white">
+                        <span>Subject: </span>
+                        <span>Academe LMS</span>
+                     </div>
+                      <div class="col">
+                       <span class="btn btn-secondary btn-sm">LOW</span>
+                      <span class="btn btn-warning btn-sm">5mins ago</span>
+                      <span class="btn btn-info btn-sm">Tuesday April 21 2023</span>
+                     </div>
+                     </div>
+                    <div class="attachments mt-1 ml-1">
+                        <label for="">Attachments</label>
+                        <div class="p-2">
+                            <img id="myImg" src="./images/sample-pic.png" alt="Snow">
+                              <!-- The Modal -->
+                              <div id="myModal" class="mymodal">
+                                <span class="close">&times;</span>
+                                <img class="modal-contents" id="img01">
+                                <div id="caption"></div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="description d-flex flex-column ml-1">
+                        <label for="">Description</label>
+                        <input type="text" id="description" class="p-2 rounded-2 border" name="country" value="I want you to fix this error" readonly>
+                    </div>
+                  <div id="comments" class=" ml-1 mt-1">
+                    <label>All comments</label>
+                    <div class="width-xl p-2 border bg-white rounded-2">
+                        <div class="d-flex align-items-center">
+                            
+                            <img src="./images/avatar-icon.png" alt="" class="user-icon md">
+                            <div class="ml-1 message-reply">
+                                <h6>Angelo Guiao</h6>
+                                <small>Hi Good afternoon, I would like to inform you that the academe lms is not working</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            
+                            <img src="./images/avatar-icon2.png" alt="" class="user-icon md">
+                            <div class="ml-1 message-reply">
+                                <h6>Jayson Balingit</h6>
+                                <small>Thank you for reporting, we are working on it just wait for a while.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-1">
+                    <div id="editor">
+                     
+                      </div>
+                    </div>
+                    <button class="btn btn-primary mt-1">Send Message</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      </main>
+      </div>
+    <!-- Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="./js/app.js"></script>
+    <script src="./js/quill.js"></script>
+
+    <!--Quill js-->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+</body>
+</html>

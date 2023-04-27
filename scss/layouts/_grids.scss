@@ -58,6 +58,7 @@ $gap-values: (
     text-align: center;
     cursor: pointer;
     transition: transform .3s;
+    margin-bottom: 50px;
   }
   .grid-item:hover{
     -ms-transform: scale(1.1); /* IE 9 */
@@ -76,4 +77,5 @@ $gap-values: (
     .category-list{
         grid-template-columns: repeat(1, 1fr);
     }
+ 
 }

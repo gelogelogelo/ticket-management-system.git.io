@@ -1,4 +1,27 @@
 .filter{
     width: 130px !important;
+    height: 35px;
+}
+
+.search-btn{
+  margin-top: 1.5rem;
+  padding: 5px 50px;
+}
+
+@include breakpoint ('sm'){
+    .filters{
+        flex-direction: column;
+    }
+
+    .hide{
+        display: none;
+    }
+    .search-container{
+        width: 100%;
+    }
+    .search-btn{
+        width: 100%;
+    }
+
 }
 
