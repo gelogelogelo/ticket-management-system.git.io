@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
 
-    <title>Dashboard - Ticket Managetment System</title>
+    <title>Tickets - Ticket Managetment System</title>
 </head>
 <body class="bg-light">
   <input type="checkbox" id="nav-toggle">
@@ -47,7 +47,7 @@
                   <span>Category</span>
               </a>
               </li>
-              <li><a href="dashboard-category.html">
+              <li><a href="clients.html">
                 <i class="fa-solid fa-users"></i>
                 <span>Clients</span>
             </a>
@@ -128,16 +128,33 @@
              </div>
             </div>
      </div>
-        <div class="filters d-flex  width-xl p-2 gap-4 justify-content-end mt-3">
+     <div></div>
+        <div class="filters d-flex  width-xl p-2 justify-content-evenly mt-3 shadow rounded-3 mb-1 bg-white">
             <div class="search-container">
-                <input type="text" class="ticket shadow-sm" placeholder="Search here">
+                <small class="text-align-center ml-1">What are you looking for?</small>
+                <input type="text" class="ticket shadow-sm border" placeholder="Search here">
             </div>
+            <div class="hide">
+                <label>Category</label>
+            <select class="form-select btn-outline filter" aria-label="Default select example">
+                <option selected>Academe LMS</option>
+                <option value="Ongoing">Academe SMS</option>
+                <option value="Done">Trietrade</option>
+                <option value="Done">Cloudbiz SMS</option>
+              </select>
+            </div>
+            <div class="hide">
+                <label>Status</label>
             <select class="form-select btn-outline filter" aria-label="Default select example">
                 <option selected>New Task</option>
                 <option value="Ongoing">Ongoing</option>
                 <option value="Done">Overdue</option>
                 <option value="Done">Done</option>
               </select>
+            </div>
+            <div>
+                <button class="btn btn-primary search-btn">Search</button>
+            </div>
         </div>
     
         <div style="overflow-x:scroll;">
@@ -147,21 +164,21 @@
             <th>Requested by:</th>
             <th>Ticket ID</th>
             <th>Product</th>
-            <th>Description</th>
             <th>Status</th>
             <th>Remarks</th>
             <th>Date</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
-        <a href="ticket-receive.html">
+   
         <tr>
             <td> 
                 <i class="fa-regular fa-user text-light border border-dark p-1 rounded-circle bg-primary mr-1"></i>
                 Angelo Guiao</td>
             <td>2001</td>
             <td>Academe</td>
-            <td>About the lms...</td>
+            
             <td>
                 <select class="form-select btn-outline status" aria-label="Default select example">
                     <option selected>Pending</option>
@@ -169,18 +186,18 @@
                     <option value="Done">Done</option>
                   </select>
             </td>
-            <td>Thank you...</td>
+            <td>Academe LMS</td>
             <td>03/01/2023</td>
+               <td><a href="messages.html" class="p-1 btn btn-primary btn-sm" id="button-view">view</a></td>
      
         </tr>
-    </a>
         <tr>
             <td> 
                 <i class="fa-regular fa-user text-light border border-dark p-1 rounded-circle bg-primary mr-1"></i>
                 Angelo Guiao</td>
             <td>2001</td>
             <td>Academe</td>
-            <td>About the lms...</td>
+            
             <td>
                 <select class="form-select btn-outline status" aria-label="Default select example">
                     <option selected>Pending</option>
@@ -189,8 +206,9 @@
                   </select>
                   </div>
             </td>
-            <td>Thank you...</td>
+            <td>Academe SMS</td>
             <td>03/01/2023</td>
+            <td><a href="messages.html" class="p-1 btn btn-primary btn-sm" id="button-view">view</a></td>
         </tr>
         <tr>
             <td> 
@@ -198,7 +216,7 @@
                 Angelo Guiao</td>
             <td>2001</td>
             <td>Academe</td>
-            <td>About the lms...</td>
+            
             <td>
                 <select class="form-select btn-outline status" aria-label="Default select example">
                     <option selected>Pending</option>
@@ -206,8 +224,9 @@
                     <option value="Done">Done</option>
                   </select>
             </td>
-            <td>Thank you...</td>
+            <td>Academe SMS</td>
             <td>03/01/2023</td>
+               <td><a href="messages.html" class="p-1 btn btn-primary btn-sm" id="button-view">view</a></td>
         </tr>
         <tr>
             <td> 
@@ -215,7 +234,7 @@
                 Angelo Guiao</td>
             <td>2001</td>
             <td>Academe</td>
-            <td>About the lms...</td>
+            
             <td>
                 <select class="form-select btn-outline status" aria-label="Default select example">
                     <option selected>Pending</option>
@@ -223,8 +242,9 @@
                     <option value="Done">Done</option>
                   </select>
             </td>
-            <td>Thank you...</td>
+            <td>Academe LMS</td>
             <td>03/01/2023</td>
+               <td><a href="messages.html" class="p-1 btn btn-primary btn-sm" id="button-view">view</a></td>
         </tr>
         <tr>
             <td> 
@@ -232,7 +252,6 @@
                 Angelo Guiao</td>
             <td>2001</td>
             <td>Academe</td>
-            <td>About the lms...</td>
             <td>
                 <select class="form-select btn-outline status" aria-label="Default select example">
                     <option selected>Pending</option>
@@ -240,10 +259,10 @@
                     <option value="Done">Done</option>
                   </select>
             </td>
-            <td>Thank you...</td>
+            <td>Academe SMS</td>
             <td>03/01/2023</td>
+               <td><a href="messages.html" class="p-1 btn btn-primary btn-sm" id="button-view">view</a></td>
         </tr>
-        
         
     </tbody>
         </table>

@@ -16,6 +16,10 @@ $(document).ready(function(){
         
     });
 
+    let quill = new Quill('#editor', {
+      theme: 'snow'
+    });
+
 });
 
 
@@ -62,4 +66,31 @@ function myFunction() {
   }
 
 
-  $('#myModal').modal(options)
+  // $('#myModal').modal(options)
+
+
+  // Get the modal
+let mymodal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+let img = document.getElementById("myImg");
+let modalImg = document.getElementById("img01");
+let captionText = document.getElementById("description").value;
+
+img.onclick = function(){
+  mymodal.style.display = "block";
+  modalImg.src = this.src;
+  document.getElementById("caption").innerHTML = captionText;
+}
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  mymodal.style.display = "none";
+}
+ 
+
+// quill js
+
