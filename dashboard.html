@@ -76,17 +76,108 @@
               </label>
                   Dashboard
               </h1>
-              <!-- <div class="search-wrapper">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <input type="search" placeholder="Search here">
-              </div> -->
-             <div class="user-wrapper">
-              <img src="./images/avatar-icon.png" alt="avatar">
-              <div>
-                  <h4>John Doe</h4>
-                  <small>Super admin</small>
+             <!-- <div class="d-flex" onclick="notifToggle()">
+              <div class="notification mt-1 mr-1">
+                <i class="fa-regular fa-bell bell-icon"></i>
               </div>
-             </div> 
+
+              <div class="notif shadow-sm p-2">
+                <div class="d-flex gap-2 pl-2 pb-1">
+                   <ul class="d-flex gap-4">
+                      <li class="border-dark border-bottom">All notification</li>
+                      <li>messages</li>
+                   </ul>
+                </div>
+                <div class="d-flex gap-2 pl-2 pb-1 border-bottom pt-2 pb-2 notif-box">
+                   <img src="./images/avatar-icon2.png" class="avatar">
+                  <div class="notification-box">
+                   <div class="d-flex gap-2 pt-1">
+                   <p class="font-weight-bold">Angelo M. Guiao</p>
+                   <p>is message you</p>
+                   </div>
+                  <div class="d-flex gap-3">
+                    <small>2hrs ago</small>
+                    <small>Academe LMS</small>
+                  </div>
+                </div>
+               </div>
+
+               <div class="d-flex gap-2 pl-2 pb-1 border-bottom pt-2 pb-2 notif-box">
+                <img src="./images/avatar-icon.png" class="avatar">
+               <div class="notification-box">
+                <div class="d-flex gap-2 pt-1">
+                <p class="font-weight-bold">Jayson Balingit</p>
+                <p>has created a new ticket</p>
+                </div>
+               <div class="d-flex gap-3">
+                 <small>2hrs ago</small>
+                 <small>Academe LMS</small>
+               </div>
+             </div>
+            </div>
+
+            <div class="d-flex gap-2 pl-2 pb-1 border-bottom pt-2 pb-2 notif-box">
+                <img src="./images/avatar-icon2.png" class="avatar">
+               <div class="notification-box">
+                <div class="d-flex gap-2 pt-1">
+                <p class="font-weight-bold">Angelo M. Guiao</p>
+                <p>is message you</p>
+                </div>
+               <div class="d-flex gap-3">
+                 <small>2hrs ago</small>
+                 <small>Academe LMS</small>
+               </div>
+             </div>
+            </div>
+            <div class="d-flex gap-2 pl-2 pb-1 border-bottom pt-2 pb-2 notif-box">
+                <img src="./images/avatar-icon.png" class="avatar">
+               <div class="notification-box">
+                <div class="d-flex gap-2 pt-1">
+                <p class="font-weight-bold">Jayson Balingit</p>
+                <p>has created a new ticket</p>
+                </div>
+               <div class="d-flex gap-3">
+                 <small>2hrs ago</small>
+                 <small>Academe LMS</small>
+               </div>
+             </div>
+            </div>
+
+            <div class="d-flex gap-2 pl-2 pb-1 border-bottom pt-2 pb-2 notif-box">
+                <img src="./images/avatar-icon2.png" class="avatar">
+               <div class="notification-box">
+                <div class="d-flex gap-2 pt-1">
+                <p class="font-weight-bold">Angelo M. Guiao</p>
+                <p>is message you</p>
+                </div>
+               <div class="d-flex gap-3">
+                 <small>2hrs ago</small>
+                 <small>Academe LMS</small>
+               </div>
+             </div>
+            </div>
+                
+            </div> -->
+
+
+              <div class="user-wrapper shadow-sm" onclick="logoutToggle()">
+                <img src="./images/avatar-icon.png" alt="avatar">
+                    <h4>John Doe</h4>
+                <i class="fa-solid fa-angle-down"></i>
+               </div> 
+               <div class="menu shadow-sm p-2">
+                   <div class="d-flex gap-2 pl-2 pb-1 border-bottom">
+                      <i class="fa-regular fa-user"></i>
+                      <small class="logout pl-1">Profile</small>
+                   </div>
+                   <div class="d-flex gap-2 pl-2 pt-1">
+                      <a href="index.html">
+                      <i class="fa-solid fa-right-from-bracket text-dark"></i>
+                      <small class="logout text-dark pl-1">Logout</small>
+                  </a>
+                   </div>
+               </div>
+            </div>
       </header>
 
       <main id="main-dashboard">
@@ -267,7 +358,6 @@
 
     <!-- JQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
     <!-- Javascript -->
     <script src="./js/app.js"></script>
 </body>

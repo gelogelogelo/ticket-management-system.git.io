@@ -1,11 +1,32 @@
 // Sidebar hamburger function
 
+const toggleMenu = document.querySelector(".menu");
+
+
+function logoutToggle() {
+toggleMenu.classList.toggle("active");
+};
+
+document.querySelectorAll('main')[0].addEventListener('click', function(){
+toggleMenu.classList.remove("active")
+})
+
+const notifMenu = document.querySelector(".notif");
+function notifToggle() {
+  notifMenu.classList.toggle("active");
+  };
+  
+  document.querySelectorAll('main')[0].addEventListener('click', function(){
+  notifMenu.classList.remove("active")
+  })
+  
+
 $(document).ready(function(){
+
     // expand sidebar
     $('.menu-btn').click(function(){
         $('.side-bar').removeClass('active');
         $('.menu-btn').css("visibility", "hidden");
-    
         
     });
 
@@ -15,10 +36,7 @@ $(document).ready(function(){
         $('.menu-btn').css("visibility", "visible");
         
     });
-
-    let quill = new Quill('#editor', {
-      theme: 'snow'
-    });
+    
 
 });
 
@@ -91,6 +109,4 @@ span.onclick = function() {
   mymodal.style.display = "none";
 }
  
-
-// quill js
-
+// Log out function

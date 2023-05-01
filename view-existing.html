@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/ticket-icon.png">
+
+    
+    <!-- Website icon -->
+    <link rel="icon" type="image/x-icon" href="./images/ticket-icon.png">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <title>Category - Ticket Managetment System</title>
+</head>
+<body>
+  
+    <header class="header background-dark">
+        <div class="container">
+            <nav class="navbar ">
+                <img class="nav-branding" src="./images/go-cloud.png">
+
+                <div class="nav-menu">
+                    <h3 class="text-color-light">Help Desk</h3>
+                    </div>
+            </nav>
+        </div>
+        <div class="links d-flex background-light shadow-sm pb-1">
+          <div class="container">
+          <a href="index.html">Help desk</a>
+          <i class="fa-solid fa-greater-than icons"></i>
+          <a href="#">View Existing Ticket</a>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container d-flex flex-column">
+          <div class="mt-7 width-xl tickets-container d-flex justify-content-center gap-2 p-2">
+            <i class="fa-sharp fa-regular fa-file rounded-circle document-icon"></i>
+            <h6>View Existing Ticket</h6>
+          </div>
+          <div class="width-xl d-flex justify-content-center flex-column align-items-center">
+          <div class="search-ticket-container width-lg border d-flex flex-column justify-content-center align-items-center pt-3 pb-3">
+            <label class="pb-1 pr-2">Ticket tracking ID</label>
+            <input type="text form-control" class="width-xsm height-sm p-2">
+            <a href="view-ticket.html" class="btn btn-primary width-xsm mt-1">
+            View Ticket
+          </a>
+            <a href="#" class="mt-2" button data-bs-toggle="modal" data-bs-target="#forgotModal">
+            <small class="link-primary">Forgot Ticket ID?</small>
+          </a>
+
+          <div class="modal fade" id="forgotModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="d-flex justify-content-between p-2">
+                  <h6 class="modal-title" id="exampleModalLabel">Forgot Tracking ID?</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <small>No worries! Enter your Email address and we will send you your tracking ID right away:</small>
+                 <input type="form-control" class="width-xl p-1">
+                 <form class="mt-1 pb-1">
+                 <input type="radio" id="option2" name="option" value="option2">
+                 <label for="option2">Send me only the ticket</label><br>
+                 <input type="radio" id="option3" name="option" value="option3">
+                 <label for="option3">Send me all my ticket</label><br>
+                </form>
+                <button type="button" class="btn btn-primary p-1 rounded-2 btn-sm" data-bs-dismiss="modal">Send me Tracking ID</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+      <p class="text-align-center">© Copyright GoCloud Asia 2023 | Support Ticket System</p>
+    </footer>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
 
-    <title>Dashboard - Ticket Managetment System</title>
+    <title>Category - Ticket Managetment System</title>
 </head>
 <body class="bg-light">
   <input type="checkbox" id="nav-toggle">
@@ -47,7 +47,7 @@
                   <span>Category</span>
               </a>
               </li>
-              <li><a href="dashboard-category.html">
+              <li><a href="clients.html">
                 <i class="fa-solid fa-users"></i>
                 <span>Clients</span>
             </a>
@@ -78,18 +78,28 @@
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <input type="search" placeholder="Search here">
               </div> -->
-             <div class="user-wrapper">
-              <img src="./images/avatar-icon.png" alt="avatar">
-              <div>
-                  <h4>John Doe</h4>
-                  <small>Super admin</small>
-              </div>
-             </div> 
+              <div class="user-wrapper shadow-sm" onclick="logoutToggle()">
+                <img src="./images/avatar-icon.png" alt="avatar">
+                    <h4>John Doe</h4>
+                <i class="fa-solid fa-angle-down"></i>
+               </div> 
+               <div class="menu shadow-sm p-2">
+                   <div class="d-flex gap-2 pl-2 pb-1 border-bottom">
+                      <i class="fa-regular fa-user"></i>
+                      <small class="logout pl-1">Profile</small>
+                   </div>
+                   <div class="d-flex gap-2 pl-2 pt-1">
+                      <a href="index.html">
+                      <i class="fa-solid fa-right-from-bracket text-dark"></i>
+                      <small class="logout text-dark pl-1">Logout</small>
+                  </a>
+                   </div>
+               </div>
       </header>
 
       <main id="main-dashboard">
         <div class="category-container">
-              <div class="category-list mt-1">
+              <div class="category-list mt-3">
                 <div class="grid-item shadow p-3 rounded-lg">
                   <a href="create-tickets.html">
                   <img src="./images/products/logo-academe-lms.png" alt="logo-academe-lms" class="product-image">

@@ -78,18 +78,28 @@
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <input type="search" placeholder="Search here">
               </div> -->
-             <div class="user-wrapper">
-              <img src="./images/avatar-icon.png" alt="avatar">
-              <div>
-                  <h4>John Doe</h4>
-                  <small>Super admin</small>
-              </div>
-             </div> 
+              <div class="user-wrapper shadow-sm" onclick="logoutToggle()">
+                <img src="./images/avatar-icon.png" alt="avatar">
+                    <h4>John Doe</h4>
+                <i class="fa-solid fa-angle-down"></i>
+               </div> 
+               <div class="menu shadow-sm p-2">
+                   <div class="d-flex gap-2 pl-2 pb-1 border-bottom">
+                      <i class="fa-regular fa-user"></i>
+                      <small class="logout pl-1">Profile</small>
+                   </div>
+                   <div class="d-flex gap-2 pl-2 pt-1">
+                      <a href="index.html">
+                      <i class="fa-solid fa-right-from-bracket text-dark"></i>
+                      <small class="logout text-dark pl-1">Logout</small>
+                  </a>
+                   </div>
+               </div>
       </header>
 
       <main id="main-dashboard">
        <div class="settings row mt-1 bg-white p-1 rounded-2">
-        <div class="settings-left col m-2">
+        <div class="settings-left col-sm-2 mt-2">
              <h5>Account Settings</h5>
              <div class="left-container mt-2">
                 <ul>
@@ -107,7 +117,7 @@
                 </ul>
              </div>
         </div>
-        <div class="settings-right col pt-5 mt-1 pl-4">
+        <div class="settings-right col-sm-9 pt-5 mt-1 pl-4">
            <h5 class="mb-2">General Info</h5>
            <form class="account-settings">
             <div>

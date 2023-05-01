@@ -106,6 +106,19 @@
 .message-reply{
     line-height: 2px;
 }
+.tickets-container h6{
+    font-size: 25px;
+    margin-top: 7px;
+}
+
+.notification-box{
+    line-height: 2px;
+}
+.notif-box:hover{
+    background:rgb(223, 222, 222);
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 @include breakpoint('md'){
     .category-container{

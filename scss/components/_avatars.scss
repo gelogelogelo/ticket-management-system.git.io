@@ -9,7 +9,12 @@
     top:0;
 
 }
-
+.document-icon{
+    padding: 10px 15px;
+    background: var(--main-color);
+    color: white;
+    font-size: 25px;
+}
 .user-icon{
     width: 30px;
     height: 30px;
@@ -27,6 +32,24 @@
     transform: rotate(40deg);
     position: relative;
     top: -170px;
+}
+
+.bell-icon{
+    font-size: 20px;
+}
+
+.notification{
+   cursor: pointer;
+}
+
+.notification::before{
+    content:"";
+    border-radius: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+    position:absolute;
+    right: 185px;
 }
 
 
