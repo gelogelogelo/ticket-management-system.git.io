@@ -1,7 +1,6 @@
-// Sidebar hamburger function
+
 
 const toggleMenu = document.querySelector(".menu");
-
 
 function logoutToggle() {
 toggleMenu.classList.toggle("active");
@@ -11,14 +10,14 @@ document.querySelectorAll('main')[0].addEventListener('click', function(){
 toggleMenu.classList.remove("active")
 })
 
-const notifMenu = document.querySelector(".notif");
-function notifToggle() {
-  notifMenu.classList.toggle("active");
-  };
+// const notifMenu = document.querySelector(".notif");
+// function notifToggle() {
+//   notifMenu.classList.toggle("active");
+//   };
   
-  document.querySelectorAll('main')[0].addEventListener('click', function(){
-  notifMenu.classList.remove("active")
-  })
+//   document.querySelectorAll('main')[0].addEventListener('click', function(){
+//   notifMenu.classList.remove("active")
+//   })
   
 
 $(document).ready(function(){
